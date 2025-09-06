@@ -9,19 +9,24 @@
     --purple-500: rgba(147, 51, 234, 1);
     --purple-700: #8817EE;
     --emerald-500: #48CC7D;
+    --text-100: var(--primary-500);
     --text-200: #717182;
     --text-300: #4C4C5A;
-    --text-500: #F9F9F9;
-    /*--text-500: #1E1E1E;*/
+    --text-800: #1E1E1E;
     --gradient-text: linear-gradient(to right, #f1e1c2, #fcbc98);
     --gradient-primary: linear-gradient(to bottom right, #0f172a 0%, /* from */ #4c1d95 50%, /* via */ #1e293b 100% /* to */);
 
+    { /*TODO : peut-être revoir la taille minimale des polices sur petit format.*/}
     --font-size-sm: clamp(0.8rem, 1vw, 1rem); /* petit texte */
     --font-size-base: clamp(0.9rem, 1.2vw, 1.125rem); /* texte normal */
     --font-size-lg: clamp(1rem, 1.25vw, 1.25rem); /* sous-titres */
-    --font-size-xl: clamp(1rem, 1.75vw, 1.75rem); /* titres h3 */
+    --font-size-xl: clamp(1.1rem, 1.75vw, 1.75rem); /* titres h3 */
     --font-size-2xl: clamp(1.2rem, 2.5vw, 2.25rem); /* titres h2 */
-    --font-size-3xl: clamp(1.95rem, 4vw, 4rem); /* gros titres h1 */
+    --font-size-3xl: clamp(1.75rem, 4vw, 4rem); /* gros titres h1 */
+
+    --border-radius-sm: 8px;
+    --border-radius-lg: 20px;
+    --border-radius-xl: 25px;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -30,55 +35,52 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    outline: none;
 }
 
 body {
-    color: var(--text-500);
+    color: var(--text-100);
     text-align: center;
-    margin-inline: 5vw;
-    background: var(--gradient-primary);
 }
 
 section {
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* mettre fit-content pour certaines sections ?*/
+    padding-inline: 10vw;
+    padding-block: 80px;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--purple-500);
+    cursor: pointer;
+
+}
+
+.all-center {
+    margin: auto;
+}
+
+.flex-center {
+    display: flex; /* pour centrer l'image */
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* mettre fit-content pour certaines sections ?*/
 }
-
-.center {
-
-    margin: 0 auto;
-
-}
-
-/*.text-2xl {*/
-/*    font-size: clamp(1.95rem, 4.5vw, 4.5rem);*/
-/*    line-height: 1.25;*/
-/*    color: var(--text-500);*/
-/*}*/
-
-/*.text-xl {*/
-/*    font-size: clamp(1.2rem, 2.75vw, 2.25rem);*/
-/*    line-height: 1.25;*/
-/*    color: var(--text-500);*/
-/*}*/
-
-/*.text-l {*/
-/*    font-size: clamp(1rem, 1.75vw, 1.75rem);*/
-/*    line-height: 1.25;*/
-/*    color: var(--text-500);*/
-/*}*/
 
 .text-3xl {
     font-size: var(--font-size-3xl);
     line-height: 1.2;
+    font-weight: bold;
+
 }
 
 .text-2xl {
     font-size: var(--font-size-2xl);
     line-height: 1.25;
+
 }
 
 .text-xl {
@@ -90,10 +92,16 @@ section {
     font-size: var(--font-size-lg);
 }
 
+.text-lg-bold {
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+}
+
 .text-base-200 {
     font-size: var(--font-size-base);
     color: var(--text-200);
 }
+
 .text-base-300 {
     font-size: var(--font-size-base);
     color: var(--text-300);
@@ -111,6 +119,19 @@ section {
     color: transparent;
 }
 
-.margin-home {
-    margin-bottom: clamp(1rem, 1.5vw, 1.5rem);
+.mt-1 {
+    margin-top: 1rem;
 }
+
+.mb-1-25 {
+    margin-bottom: 1.25rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+

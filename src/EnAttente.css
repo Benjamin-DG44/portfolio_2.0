@@ -1,7 +1,1 @@
-.shadows {
-    width: 300px; /* largeur moyenne */
-    height: 200px; /* hauteur moyenne */
-    background-color: #ffffff; /* fond blanc */
-    border-radius: 25px; /* coins arrondis de 25px */
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), /* première ombre */ 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* deuxième ombre */
-}
+
