@@ -13,13 +13,13 @@ function Home() {
                 <p className="text-2xl margin-home">Étudiant en BTS SIO option SLAM</p>
                 <div className="description">
                     <p className="text-lg ">Passionné par la programmation. J’entame ma <strong><i>seconde année en BTS
-                        SIO
-                        option SLAM</i></strong> à La Joliverie à Nantes. Ayant un attrait pour la <strong><i>programmation
-                        orientée objet</i></strong>, je souhaiterais me spécialiser dans le développement logiciel.
+                        SIO option SLAM</i></strong> à La Joliverie à Nantes. Ayant un attrait pour la <strong><i>
+                        programmation orientée objet</i></strong>, je souhaiterais me spécialiser dans le développement
+                        logiciel.
                     </p>
                 </div>
                 <div className="button-group">
-                    {/*TODO LATER: "draw" animation button*/}
+                    {/* TODO LATER: "draw" animation button*/}
                     <Button variant="primary" to={PROJECTS_URL}>
                         <p className="text-lg-bold">Voir mon travail</p>
                     </Button>
@@ -32,7 +32,6 @@ function Home() {
                         <ChevronDown color="var(--primary-500)" size={"2rem"}/>
                     </Link>
                 </div>
-
             </div>
         </section>
     )

@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import {Link} from "react-scroll";
 import "./Button.css";
 import * as React from "react";
 
@@ -30,9 +30,9 @@ function Button({ variant, children, to, duration = 500, onClick, animation }: B
 
     // Sinon, bouton classique
     return (
-        <button className={`btn btn-${variant}`} onClick={onClick}>
+        <a className={`btn btn-${variant}`} onClick={onClick}>
             {children}
-        </button>
+        </a>
     );
 }
 

@@ -1,4 +1,17 @@
 .projects {
-    color: black
-
+    color: black;
 }
+
+.grid-projects {
+    display: grid;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+

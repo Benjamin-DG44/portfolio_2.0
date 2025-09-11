@@ -8,7 +8,8 @@ function App() {
         <>
             <Home />
             <About />
-            {/*<Projects />*/}
+            {/*TypeWriting*/}
+            <Projects />
         </>
 
     )
